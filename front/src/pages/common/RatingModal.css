@@ -1,0 +1,228 @@
+.rating-modal {
+  width: min(560px, 100%);
+  margin: 0 auto;
+  padding: 32px 32px 36px;
+  text-align: center;
+  box-sizing: border-box;
+}
+
+.rating-modal__section {
+  display: flex;
+  flex-direction: column;
+}
+
+.rating-modal__title-wrap {
+  display: flex;
+  align-items: flex-start;
+  padding-bottom: 36px;
+}
+
+.rating-modal__title-wrap--compact {
+  padding-bottom: 12px;
+}
+
+.rating-modal__title {
+  font-size: 16px;
+  font-weight: 700;
+  margin: 0;
+  color: #111827;
+}
+
+.rating-modal__score-input {
+  font-size: 28px;
+  font-weight: 500;
+  letter-spacing: 5px;
+  text-align: center;
+  user-select: none;
+  cursor: text;
+  outline: none;
+  margin-bottom: 15px;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 2px;
+}
+
+.rating-modal__digit {
+  color: #ccc;
+  transition: color 0.2s ease;
+}
+
+.rating-modal__digit.is-filled {
+  color: #000;
+}
+
+.rating-modal__dot {
+  margin: 0 1px;
+  color: #ccc;
+}
+
+.rating-modal__error {
+  color: #fff;
+  background: #333;
+  padding: 6px 12px;
+  border-radius: 6px;
+  font-size: 13px;
+  margin-bottom: 12px;
+  display: inline-flex;
+  justify-content: center;
+}
+
+.rating-modal__stars {
+  display: flex;
+  justify-content: center;
+  gap: 13px;
+  margin-bottom: 20px;
+}
+
+.rating-modal__secondary-actions {
+  display: flex;
+  justify-content: center;
+  gap: 16px;
+  margin-bottom: 56px;
+}
+
+.rating-modal__skip-button {
+  font-size: 13px;
+  background: #ffffff;
+  color: #5e5e64;
+  border: 1px solid #edd379;
+  border-radius: 10px;
+  height: 38px;
+  width: 136px;
+  cursor: pointer;
+  transition: background 0.2s ease, transform 0.2s ease;
+}
+
+.rating-modal__skip-button:hover {
+  background: #fff6d9;
+  transform: translateY(-1px);
+}
+
+.rating-modal__skip-button--ghost:hover {
+  background: #fafafa;
+}
+
+.rating-modal__footer {
+  display: flex;
+  justify-content: flex-end;
+}
+
+.rating-modal__primary-button {
+  background: #678d77;
+  color: #fff;
+  border: none;
+  border-radius: 10px;
+  height: 40px;
+  min-width: 120px;
+  cursor: pointer;
+  transition: opacity 0.2s ease, transform 0.2s ease;
+}
+
+.rating-modal__primary-button:hover:not(:disabled) {
+  transform: translateY(-1px);
+}
+
+.rating-modal__primary-button:disabled {
+  opacity: 0.5;
+  cursor: not-allowed;
+}
+
+.rating-modal__textarea {
+  width: 100%;
+  border: none;
+  height: 220px;
+  margin-bottom: 20px;
+  font-size: 14px;
+  resize: none;
+  padding: 18px;
+  box-sizing: border-box;
+  border-radius: 12px;
+  background: #f8fafc;
+  color: #111827;
+  outline: none;
+}
+
+.rating-modal__comment-footer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 20px;
+}
+
+.rating-modal__spoiler {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.rating-modal__spoiler-label {
+  font-size: 11px;
+  color: #7e7e7e;
+}
+
+.rating-modal__toggle {
+  width: 40px;
+  height: 22px;
+  border-radius: 20px;
+  background: #d9d9d9;
+  position: relative;
+  cursor: pointer;
+  border: none;
+  padding: 0;
+  transition: background 0.2s ease;
+}
+
+.rating-modal__toggle .rating-modal__toggle-knob {
+  width: 18px;
+  height: 18px;
+  border-radius: 50%;
+  background: #ffffff;
+  position: absolute;
+  top: 2px;
+  left: 2px;
+  transition: left 0.2s ease, background 0.2s ease;
+}
+
+.rating-modal__toggle.is-active {
+  background: #a7c7ad;
+}
+
+.rating-modal__toggle.is-active .rating-modal__toggle-knob {
+  left: 20px;
+  background: #83a78c;
+}
+
+@media (max-width: 640px) {
+  .rating-modal {
+    width: 100%;
+    padding: 24px 20px 28px;
+  }
+
+  .rating-modal__secondary-actions {
+    flex-direction: column;
+    margin-bottom: 36px;
+  }
+
+  .rating-modal__skip-button {
+    width: 100%;
+  }
+
+  .rating-modal__footer {
+    justify-content: center;
+  }
+
+  .rating-modal__comment-footer {
+    flex-direction: column;
+    align-items: stretch;
+    gap: 16px;
+  }
+
+  .rating-modal__primary-button {
+    width: 100%;
+  }
+
+  .rating-modal__textarea {
+    height: 200px;
+  }
+}

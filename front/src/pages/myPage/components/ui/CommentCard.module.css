@@ -1,0 +1,193 @@
+.cardContainer {
+  background-color: #f6f6f6;
+  border-radius: 8px;
+  padding: 23px 22px 15px 22px;
+  display: flex;
+  flex-direction: column;
+}
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 10px;
+}
+
+.userInfo {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  cursor: pointer;
+}
+
+.userIcon {
+  width: 30px;
+  height: 30px;
+}
+
+.userName {
+  font-size: 15px;
+  font-weight: 600;
+  color: #7e7e7e;
+}
+
+.userRating {
+  display: flex;
+  align-items: center;
+  gap: 4px;
+  font-size: 14px;
+  color: #7e7e7e;
+  font-weight: 500;
+}
+
+.userRating .starIcon {
+  width: 14px;
+  height: 14px;
+  fill: #EDD379;
+  flex-shrink: 0;
+}
+
+.divider {
+  border-top: 1px solid #ededed;
+  width: 100%;
+  margin-bottom: 15px;
+}
+
+.movieInfo {
+  display: flex;
+  gap: 12px;
+  cursor: pointer;
+}
+
+.poster {
+  width: 60px;
+  height: 85px;
+  border-radius: 5px;
+  object-fit: cover;
+}
+
+.movieText {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+}
+
+.movieTitle {
+  font-size: 14px;
+  font-weight: 600;
+  margin: 0;
+}
+
+.movieMeta {
+  font-size: 14px;
+  color: #777;
+  margin: 2px 0;
+}
+
+.movieAvgRating {
+  font-size: 12px;
+  color: #777;
+  margin: 0;
+}
+
+.content {
+  font-size: 14px;
+  margin: 20px 0;
+  color: #333;
+}
+
+.spoilerWarning {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 20px;
+  gap: 12px;
+  margin: 20px 0;
+  min-height: 100px;
+}
+
+.spoilerText {
+  font-size: 13px;
+  color: #8b6914;
+  margin: 0;
+  font-weight: 500;
+}
+
+.spoilerButton {
+  font-size: 12px;
+  background: #ffffff;
+  color: #678d77;
+  border: 1px solid #678d77;
+  border-radius: 6px;
+  padding: 6px 12px;
+  cursor: pointer;
+  transition: background 0.2s ease, color 0.2s ease;
+}
+
+.spoilerButton:hover {
+  background: #678d77;
+  color: #ffffff;
+}
+
+.footer {
+  border-top: 1px solid #ededed;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 15px 0 5px 0;
+}
+
+.iconGroupLeft {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.likeButton {
+  background: none;
+  border: none;
+  padding: 0;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: transform 0.2s ease;
+}
+
+.likeButton:hover {
+  transform: scale(1.1);
+}
+
+.likeButton.isLiked {
+  transform: scale(1.1);
+}
+
+.likesCount {
+  font-size: 12px;
+  color: #7e7e7e;
+  font-weight: 500;
+}
+
+.iconGroupRight {
+  display: flex;
+  gap: 12px;
+}
+
+.heartIcon {
+  width: 20px;
+  height: 20px;
+  transition: fill 0.2s ease;
+}
+
+.editIcon {
+  width: 22px;
+  height: 22px;
+  cursor: pointer;
+}
+
+.deleteIcon {
+  width: 22px;
+  height: 22px;
+  cursor: pointer;
+}

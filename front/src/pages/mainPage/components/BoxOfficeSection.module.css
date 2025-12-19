@@ -1,0 +1,100 @@
+.sectionContainer {
+  position: relative;
+  margin: 0 auto;
+  width: 100%;
+  max-width: var(--total-width); 
+}
+
+.title {
+  font-size: 20px;
+  font-weight: bold;
+  margin-bottom: 20px;
+}
+
+.scrollContainer {
+  width: 100%; 
+  gap: var(--gap);
+  
+  display: flex;
+  overflow-x: auto;
+  scroll-snap-type: x mandatory;
+  padding-bottom: 10px;
+  scroll-behavior: smooth;
+  
+  scrollbar-width: none;
+  -ms-overflow-style: none;
+}
+
+.scrollContainer::-webkit-scrollbar {
+  display: none;
+}
+
+.cardWrapper {
+  flex: 0 0 auto;
+  scroll-snap-align: start;
+}
+
+/* --- 캐러셀 버튼 (공통 스타일) --- */
+.navButton {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 40px;
+  height: 40px;
+  border-radius: 100px;
+  border: 1px solid rgba(0, 0, 0, 0.12);
+  background: #ffffff;
+  box-shadow: 0 0 4px rgba(0, 0, 0, 0.2);
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 10;
+  user-select: none;
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+  color: #7e7e7e;
+}
+
+.navButton:hover {
+  transform: translateY(-50%) scale(1.05);
+  box-shadow: 0 0 6px rgba(0, 0, 0, 0.25);
+}
+
+.navButtonLeft {
+  left: 0;
+}
+
+.navButtonLeft svg {
+  transform: rotate(180deg);
+}
+
+.navButtonRight {
+  right: 0;
+}
+
+/* 반응형 코드 추가 */
+
+@media (max-width: 768px) {
+  .title {
+    font-size: 18px;
+    padding: 0 15px; 
+  }
+
+  .scrollContainer {
+    padding-left: 15px;
+    padding-right: 15px;
+    scroll-padding: 0 15px;
+  }
+
+  .navButton {
+    width: 36px;
+    height: 36px;
+    display: none;
+  }
+  .navButtonLeft {
+    left: 10px; 
+  }
+  .navButtonRight {
+    right: 10px; 
+  }
+}

@@ -1,0 +1,173 @@
+.overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  background-color: rgba(0, 0, 0, 0.5);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 1000;
+}
+
+.modalContent {
+  width: 375px;
+  border-radius: 15px;
+  background-color: #fff;
+  overflow: hidden;
+  max-height: 90vh;
+  overflow-y: auto;
+}
+
+.header {
+  display: flex;
+  align-items: center;
+  padding: 15px;
+  border-bottom: 1px solid #EDEDED;
+}
+
+.closeButton {
+  background: none;
+  border: none;
+  font-size: 20px;
+  font-weight: bold;
+  color: #678D77;
+  cursor: pointer;
+  margin-right: auto;
+}
+
+.title {
+  flex: 1;
+  text-align: center;
+  font-size: 18px;
+  font-weight: bold;
+  margin: 0;
+}
+
+.headerSpacer {
+  width: 20px;
+}
+
+.bgImageContainer {
+  height: 165px;
+  background-color: #A6C8A6;
+  background-size: cover;
+  background-position: center;
+  position: relative;
+}
+
+.cameraLabelBg {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+}
+
+.fileInput {
+  display: none;
+}
+
+.profileImageContainer {
+  position: absolute;
+  bottom: -50px;
+  left: 20px;
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
+  background-color: #eee; 
+}
+
+.profileImage {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.cameraLabelProfile {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 28px;
+  height: 28px;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+}
+
+/* --- 입력 영역 --- */
+.inputWrapper {
+  padding: 60px 20px 20px;
+}
+
+.inputLabel {
+  font-size: 16px;
+  font-weight: 500;
+  color: #8A8C8A;
+  display: block;
+}
+
+.nameInput {
+  width: 100%;
+  border: none;
+  border-bottom: 1px solid #ccc;
+  font-size: 20px;
+  padding: 10px 0;
+  outline: none;
+}
+
+.charCount {
+  text-align: right;
+  font-size: 13px;
+  color: #8A8C8A;
+  margin-top: 4px;
+  margin-bottom: 110px;
+}
+
+.deleteButtonWrapper {
+  padding: 0 20px 10px;
+}
+
+/* (공통) 버튼 스타일 */
+.button {
+  width: 100%;
+  padding: 12px;
+  background-color: #f2f2f2;
+  border: none;
+  border-radius: 6px;
+  font-size: 16px;
+  font-weight: 600;
+  color: #7E7E7E;
+  cursor: pointer;
+}
+
+.deleteButton {
+  margin-bottom: 3px;
+}
+
+.saveButtonWrapper {
+  padding: 0 20px 20px;
+}
+
+/* 반응형 코드 추가 */
+
+@media (max-width: 400px) {
+  .modalContent {
+    width: 95vw;
+    max-height: 95vh;
+  }
+}

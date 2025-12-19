@@ -1,0 +1,59 @@
+.card {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  
+  width: 100%;
+  cursor: pointer;
+}
+
+.poster {
+  width: 100%;
+  height: auto;
+  aspect-ratio: 2 / 3;
+
+  border-radius: 5px;
+  object-fit: cover;
+}
+
+.title {
+  margin-top: 8px;
+  margin-bottom: 0;
+  font-size: 14px;
+  font-weight: 600;
+  text-align: left;
+  color: #141414;
+  width: 100%;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.rating {
+  display: flex;
+  align-items: center;
+  gap: 4px;
+  font-size: 13px;
+  font-weight: 500;
+  color: #EDD379;
+  margin-top: 5px;
+}
+
+.rating .starIcon {
+  width: 13px;
+  height: 13px;
+  fill: #EDD379;
+  flex-shrink: 0;
+}
+
+/* 반응형 코드 추가 */
+
+@media (max-width: 480px) {
+  /* grid가 좁아질 경우 폰트 크기 줄임 */
+  .title {
+    font-size: 13px;
+  }
+  .rating {
+    font-size: 12px;
+  }
+}

@@ -1,0 +1,74 @@
+.user-comment-card {
+  background: #f5f5f5;
+  border-radius: 15px;
+  padding: 15px 20px;
+  margin-bottom: 20px;
+  width: 100%;
+  align-self: flex-start;
+}
+
+.user-comment-card__header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 8px;
+  font-size: 13px;
+  color: #555;
+  gap: 12px;
+}
+
+.user-comment-card__label {
+  color: #7e7e7e;
+  font-size: 12px;
+  font-weight: 400;
+}
+
+.user-comment-card__rating {
+  font-size: 13px;
+  color: #777;
+  display: flex;
+  align-items: center;
+  gap: 4px;
+}
+
+.user-comment-card__rating-icon {
+  width: 10px;
+  height: 10px;
+  fill: #7e7e7e;
+}
+
+.user-comment-card__divider {
+  border-top: 1px solid #e5e5e5;
+  margin: 8px 0;
+}
+
+.user-comment-card__body {
+  font-size: 13px;
+  color: #000;
+  margin: 8px 0 16px;
+  white-space: pre-line;
+}
+
+.user-comment-card__actions {
+  display: flex;
+  justify-content: flex-end;
+  gap: 10px;
+}
+
+.user-comment-card__action-button {
+  border: none;
+  background: transparent;
+  color: #555;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  font-size: 12px;
+  gap: 4px;
+  padding: 4px 6px;
+  border-radius: 6px;
+  transition: background-color 0.2s ease;
+}
+
+.user-comment-card__action-button:hover {
+  background-color: rgba(0, 0, 0, 0.05);
+}

@@ -1,0 +1,65 @@
+# 프로덕션용 Docker Compose (Railway 배포용)
+
+services:
+  # MySQL 데이터베이스 (Railway MySQL 서비스 사용 권장)
+  mysql:
+    image: mysql:8.0
+    environment:
+      MYSQL_ROOT_PASSWORD: ${MYSQL_ROOT_PASSWORD:-seorin1215*}
+      MYSQL_DATABASE: ${MYSQL_DATABASE:-filmograph}
+    ports:
+      - "3306:3306"
+    volumes:
+      - mysql_data:/var/lib/mysql
+    healthcheck:
+      test: ["CMD", "mysqladmin", "ping", "-h", "localhost", "-u", "root", "-p${MYSQL_ROOT_PASSWORD:-seorin1215*}"]
+      interval: 10s
+      timeout: 5s
+      retries: 5
+
+  # Spring Boot 백엔드
+  backend:
+    build:
+      context: ./backend/BACKEND
+      dockerfile: Dockerfile
+    environment:
+      # 데이터베이스 연결 (Railway MySQL 변수 사용)
+      SPRING_DATASOURCE_URL: ${SPRING_DATASOURCE_URL:-jdbc:mysql://mysql:3306/filmograph?useSSL=false&allowPublicKeyRetrieval=true&serverTimezone=Asia/Seoul}
+      SPRING_DATASOURCE_USERNAME: ${SPRING_DATASOURCE_USERNAME:-root}
+      SPRING_DATASOURCE_PASSWORD: ${SPRING_DATASOURCE_PASSWORD:-seorin1215*}
+      SPRING_JPA_HIBERNATE_DDL_AUTO: ${SPRING_JPA_HIBERNATE_DDL_AUTO:-update}
+      
+      # JWT 설정
+      APP_JWT_SECRET: ${APP_JWT_SECRET:-my-super-secret-key-please-change}
+      APP_JWT_ISSUER: ${APP_JWT_ISSUER:-filmograph_auth}
+      
+      # API 키
+      TMDB_API_KEY: ${TMDB_API_KEY}
+      KOBIS_KEY: ${KOBIS_KEY}
+      KMDB_KEY: ${KMDB_KEY}
+      
+      # 리다이렉트 URL
+      FILMOGRAPH_REDIRECT_WISHLIST: ${FILMOGRAPH_REDIRECT_WISHLIST:-http://localhost:3000/wishlist}
+      FILMOGRAPH_REDIRECT_WATCHING: ${FILMOGRAPH_REDIRECT_WATCHING:-http://localhost:3000/watching}
+      FILMOGRAPH_RESET_PASSWORD_URL: ${FILMOGRAPH_RESET_PASSWORD_URL:-http://localhost:3000/reset-password}
+    ports:
+      - "8080:8080"
+    depends_on:
+      mysql:
+        condition: service_healthy
+
+  # React Front (프로덕션 빌드)
+  front:
+    build:
+      context: ./front
+      dockerfile: Dockerfile.prod
+    environment:
+      - REACT_APP_API_URL=${REACT_APP_API_URL:-http://localhost:8080}
+    ports:
+      - "3000:80"
+    depends_on:
+      - backend
+
+volumes:
+  mysql_data:
+

@@ -1,0 +1,58 @@
+.ott-section {
+  position: relative;
+  background-color: #fff;
+  padding: 20px;
+  margin-bottom: 20px;
+}
+
+.ott-section__title {
+  padding-bottom: 20px;
+  font-size: 24px;
+  font-weight: 700;
+  color: #111827;
+}
+
+.ott-section__list {
+  display: flex;
+  gap: 12px;
+  flex-wrap: wrap;
+}
+
+.ott-section__item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 72px;
+  cursor: default;
+}
+
+.ott-section__logo {
+  width: 60px;
+  height: 60px;
+  border-radius: 100px;
+  object-fit: contain;
+  background-color: #ffffff;
+  box-shadow: 0 1px 4px rgba(0, 0, 0, 0.08);
+}
+
+.ott-section__empty {
+  padding: 20px;
+  text-align: left;
+  color: #999;
+  font-size: 14px;
+}
+
+@media (max-width: 768px) {
+  .ott-section__title {
+    font-size: 22px;
+  }
+
+  .ott-section__item {
+    width: 64px;
+  }
+
+  .ott-section__logo {
+    width: 56px;
+    height: 56px;
+  }
+}

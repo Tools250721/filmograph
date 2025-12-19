@@ -1,0 +1,29 @@
+.rating-stars {
+  display: flex;
+  gap: 6px;
+}
+
+.rating-stars__button {
+  border: none;
+  background: transparent;
+  padding: 0;
+  cursor: pointer;
+  line-height: 0;
+  transition: transform 0.2s ease;
+}
+
+.rating-stars__button:hover {
+  transform: scale(1.08);
+}
+
+.rating-stars__icon {
+  display: block;
+}
+
+@media (max-width: 768px) {
+  .rating-stars__icon {
+    width: 30px;
+    height: 30px;
+  }
+}
+

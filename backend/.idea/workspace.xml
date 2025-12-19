@@ -1,0 +1,129 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="ce6ef522-7c16-40dc-a609-c4fc79994d0f" name="Changes" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/modules.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/BACKEND/src/main/java/com/filmograph/auth_server/auth/AuthController.java" beforeDir="false" afterPath="$PROJECT_DIR$/BACKEND/src/main/java/com/filmograph/auth_server/auth/AuthController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/BACKEND/src/main/java/com/filmograph/auth_server/auth/AuthService.java" beforeDir="false" afterPath="$PROJECT_DIR$/BACKEND/src/main/java/com/filmograph/auth_server/auth/AuthService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/BACKEND/src/main/java/com/filmograph/auth_server/auth/ConfirmResetPasswordRequest.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/BACKEND/src/main/java/com/filmograph/auth_server/auth/MailTestController.java" beforeDir="false" afterPath="$PROJECT_DIR$/BACKEND/src/main/java/com/filmograph/auth_server/auth/MailTestController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/BACKEND/src/main/java/com/filmograph/auth_server/auth/comment/Comment.java" beforeDir="false" afterPath="$PROJECT_DIR$/BACKEND/src/main/java/com/filmograph/auth_server/auth/comment/Comment.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/BACKEND/src/main/java/com/filmograph/auth_server/auth/comment/CommentController.java" beforeDir="false" afterPath="$PROJECT_DIR$/BACKEND/src/main/java/com/filmograph/auth_server/auth/comment/CommentController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/BACKEND/src/main/java/com/filmograph/auth_server/auth/dto/PasswordResetTokenRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/BACKEND/src/main/java/com/filmograph/auth_server/auth/dto/PasswordResetTokenRepository.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/BACKEND/src/main/java/com/filmograph/auth_server/config/ApiExceptionHandler.java" beforeDir="false" afterPath="$PROJECT_DIR$/BACKEND/src/main/java/com/filmograph/auth_server/config/ApiExceptionHandler.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/BACKEND/src/main/java/com/filmograph/auth_server/config/JwtAuthenticationFilter.java" beforeDir="false" afterPath="$PROJECT_DIR$/BACKEND/src/main/java/com/filmograph/auth_server/config/JwtAuthenticationFilter.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/BACKEND/src/main/java/com/filmograph/auth_server/config/JwtTokenProvider.java" beforeDir="false" afterPath="$PROJECT_DIR$/BACKEND/src/main/java/com/filmograph/auth_server/config/JwtTokenProvider.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/BACKEND/src/main/java/com/filmograph/auth_server/config/SecurityConfig.java" beforeDir="false" afterPath="$PROJECT_DIR$/BACKEND/src/main/java/com/filmograph/auth_server/config/SecurityConfig.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/BACKEND/src/main/java/com/filmograph/auth_server/movie/domain/Actor.java" beforeDir="false" afterPath="$PROJECT_DIR$/BACKEND/src/main/java/com/filmograph/auth_server/movie/domain/Actor.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/BACKEND/src/main/java/com/filmograph/auth_server/movie/domain/Director.java" beforeDir="false" afterPath="$PROJECT_DIR$/BACKEND/src/main/java/com/filmograph/auth_server/movie/domain/Director.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/BACKEND/src/main/java/com/filmograph/auth_server/movie/domain/Movie.java" beforeDir="false" afterPath="$PROJECT_DIR$/BACKEND/src/main/java/com/filmograph/auth_server/movie/domain/Movie.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/BACKEND/src/main/java/com/filmograph/auth_server/movie/domain/Quote.java" beforeDir="false" afterPath="$PROJECT_DIR$/BACKEND/src/main/java/com/filmograph/auth_server/movie/domain/Quote.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/BACKEND/src/main/java/com/filmograph/auth_server/movie/domain/SearchKeyword.java" beforeDir="false" afterPath="$PROJECT_DIR$/BACKEND/src/main/java/com/filmograph/auth_server/movie/domain/SearchKeyword.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/BACKEND/src/main/java/com/filmograph/auth_server/movie/domain/UserMovie.java" beforeDir="false" afterPath="$PROJECT_DIR$/BACKEND/src/main/java/com/filmograph/auth_server/movie/domain/UserMovie.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/BACKEND/src/main/java/com/filmograph/auth_server/movie/domain/UserMovieStatus.java" beforeDir="false" afterPath="$PROJECT_DIR$/BACKEND/src/main/java/com/filmograph/auth_server/movie/domain/UserMovieStatus.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/BACKEND/src/main/java/com/filmograph/auth_server/movie/dto/RatingDto.java" beforeDir="false" afterPath="$PROJECT_DIR$/BACKEND/src/main/java/com/filmograph/auth_server/movie/dto/RatingDto.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/BACKEND/src/main/java/com/filmograph/auth_server/movie/repo/MovieRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/BACKEND/src/main/java/com/filmograph/auth_server/movie/repo/MovieRepository.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/BACKEND/src/main/java/com/filmograph/auth_server/movie/repo/MovieSearchRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/BACKEND/src/main/java/com/filmograph/auth_server/movie/repo/MovieSearchRepository.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/BACKEND/src/main/java/com/filmograph/auth_server/movie/repo/QuoteRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/BACKEND/src/main/java/com/filmograph/auth_server/movie/repo/QuoteRepository.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/BACKEND/src/main/java/com/filmograph/auth_server/movie/repo/RatingRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/BACKEND/src/main/java/com/filmograph/auth_server/movie/repo/RatingRepository.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/BACKEND/src/main/java/com/filmograph/auth_server/movie/repo/RecommendationRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/BACKEND/src/main/java/com/filmograph/auth_server/movie/repo/RecommendationRepository.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/BACKEND/src/main/java/com/filmograph/auth_server/movie/service/KmdbClient.java" beforeDir="false" afterPath="$PROJECT_DIR$/BACKEND/src/main/java/com/filmograph/auth_server/movie/service/KmdbClient.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/BACKEND/src/main/java/com/filmograph/auth_server/movie/service/KmdbService.java" beforeDir="false" afterPath="$PROJECT_DIR$/BACKEND/src/main/java/com/filmograph/auth_server/movie/service/KmdbService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/BACKEND/src/main/java/com/filmograph/auth_server/movie/service/KobisService.java" beforeDir="false" afterPath="$PROJECT_DIR$/BACKEND/src/main/java/com/filmograph/auth_server/movie/service/KobisService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/BACKEND/src/main/java/com/filmograph/auth_server/movie/service/MovieQueryService.java" beforeDir="false" afterPath="$PROJECT_DIR$/BACKEND/src/main/java/com/filmograph/auth_server/movie/service/MovieQueryService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/BACKEND/src/main/java/com/filmograph/auth_server/movie/service/MovieService.java" beforeDir="false" afterPath="$PROJECT_DIR$/BACKEND/src/main/java/com/filmograph/auth_server/movie/service/MovieService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/BACKEND/src/main/java/com/filmograph/auth_server/movie/service/OttService.java" beforeDir="false" afterPath="$PROJECT_DIR$/BACKEND/src/main/java/com/filmograph/auth_server/movie/service/OttService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/BACKEND/src/main/java/com/filmograph/auth_server/movie/service/PersonImageService.java" beforeDir="false" afterPath="$PROJECT_DIR$/BACKEND/src/main/java/com/filmograph/auth_server/movie/service/PersonImageService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/BACKEND/src/main/java/com/filmograph/auth_server/movie/service/RecommendationService.java" beforeDir="false" afterPath="$PROJECT_DIR$/BACKEND/src/main/java/com/filmograph/auth_server/movie/service/RecommendationService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/BACKEND/src/main/java/com/filmograph/auth_server/movie/service/UserListService.java" beforeDir="false" afterPath="$PROJECT_DIR$/BACKEND/src/main/java/com/filmograph/auth_server/movie/service/UserListService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/BACKEND/src/main/java/com/filmograph/auth_server/movie/web/MovieController.java" beforeDir="false" afterPath="$PROJECT_DIR$/BACKEND/src/main/java/com/filmograph/auth_server/movie/web/MovieController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/BACKEND/src/main/java/com/filmograph/auth_server/movie/web/MovieQueryController1.java" beforeDir="false" afterPath="$PROJECT_DIR$/BACKEND/src/main/java/com/filmograph/auth_server/movie/web/MovieQueryController1.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/BACKEND/src/main/java/com/filmograph/auth_server/movie/web/OttController.java" beforeDir="false" afterPath="$PROJECT_DIR$/BACKEND/src/main/java/com/filmograph/auth_server/movie/web/OttController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/BACKEND/src/main/java/com/filmograph/auth_server/movie/web/QuoteController.java" beforeDir="false" afterPath="$PROJECT_DIR$/BACKEND/src/main/java/com/filmograph/auth_server/movie/web/QuoteController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/BACKEND/src/main/java/com/filmograph/auth_server/movie/web/RecommendationController.java" beforeDir="false" afterPath="$PROJECT_DIR$/BACKEND/src/main/java/com/filmograph/auth_server/movie/web/RecommendationController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/BACKEND/src/main/java/com/filmograph/auth_server/movie/web/StatsController.java" beforeDir="false" afterPath="$PROJECT_DIR$/BACKEND/src/main/java/com/filmograph/auth_server/movie/web/StatsController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/BACKEND/src/main/java/com/filmograph/auth_server/movie/web/UserListController1.java" beforeDir="false" afterPath="$PROJECT_DIR$/BACKEND/src/main/java/com/filmograph/auth_server/movie/web/UserListController1.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/BACKEND/src/main/java/com/filmograph/auth_server/ranking/service/NetflixTop10Ingestor.java" beforeDir="false" afterPath="$PROJECT_DIR$/BACKEND/src/main/java/com/filmograph/auth_server/ranking/service/NetflixTop10Ingestor.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/BACKEND/src/main/java/com/filmograph/auth_server/ranking/web/NetflixRankingController.java" beforeDir="false" afterPath="$PROJECT_DIR$/BACKEND/src/main/java/com/filmograph/auth_server/ranking/web/NetflixRankingController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/BACKEND/src/main/java/com/filmograph/auth_server/user/CustomUserDetailsService.java" beforeDir="false" afterPath="$PROJECT_DIR$/BACKEND/src/main/java/com/filmograph/auth_server/user/CustomUserDetailsService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/BACKEND/src/main/java/com/filmograph/auth_server/user/User.java" beforeDir="false" afterPath="$PROJECT_DIR$/BACKEND/src/main/java/com/filmograph/auth_server/user/User.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/BACKEND/src/main/java/com/filmograph/auth_server/user/UserController.java" beforeDir="false" afterPath="$PROJECT_DIR$/BACKEND/src/main/java/com/filmograph/auth_server/user/UserController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/BACKEND/src/main/java/com/filmograph/auth_server/user/UserService.java" beforeDir="false" afterPath="$PROJECT_DIR$/BACKEND/src/main/java/com/filmograph/auth_server/user/UserService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/BACKEND/src/main/resources/application.yml" beforeDir="false" afterPath="$PROJECT_DIR$/BACKEND/src/main/resources/application.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/BACKEND/src/main/resources/data.sql" beforeDir="false" afterPath="$PROJECT_DIR$/BACKEND/src/main/resources/data.sql" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="HighlightingSettingsPerFile">
+    <setting file="jar://$MAVEN_REPOSITORY$/com/mysql/mysql-connector-j/9.3.0/mysql-connector-j-9.3.0.jar!/com/mysql/cj/protocol/a/authentication/CachingSha2PasswordPlugin.class" root0="SKIP_INSPECTION" />
+  </component>
+  <component name="ProblemsViewState">
+    <option name="selectedTabId" value="CurrentFile" />
+  </component>
+  <component name="ProjectColorInfo">{
+  &quot;associatedIndex&quot;: 1
+}</component>
+  <component name="ProjectId" id="35HjvlMuyT34YULUD4sx433mJLj" />
+  <component name="ProjectLevelVcsManager">
+    <ConfirmationsSetting value="2" id="Add" />
+  </component>
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;Application.AuthServerApplication.executor&quot;: &quot;Run&quot;,
+    &quot;ModuleVcsDetector.initialDetectionPerformed&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.git.unshallow&quot;: &quot;true&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;fms&quot;,
+    &quot;ignore.virus.scanning.warn.message&quot;: &quot;true&quot;,
+    &quot;last_opened_file_path&quot;: &quot;C:/tools backend 2025&quot;,
+    &quot;project.structure.last.edited&quot;: &quot;Project&quot;,
+    &quot;project.structure.proportion&quot;: &quot;0.0&quot;,
+    &quot;project.structure.side.proportion&quot;: &quot;0.0&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;preferences.lookFeel&quot;
+  }
+}</component>
+  <component name="RunManager">
+    <configuration name="AuthServerApplication" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.filmograph.auth_server.AuthServerApplication" />
+      <module name="auth-server" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.filmograph.auth_server.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Application.AuthServerApplication" />
+      </list>
+    </recent_temporary>
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="ce6ef522-7c16-40dc-a609-c4fc79994d0f" name="Changes" comment="" />
+      <created>1762774123220</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1762774123220</updated>
+    </task>
+    <servers />
+  </component>
+</project>

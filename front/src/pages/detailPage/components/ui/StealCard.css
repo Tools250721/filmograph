@@ -1,0 +1,30 @@
+.steal-card {
+  position: relative;
+  display: flex;
+  align-items: center;
+  padding: 10px 0;
+}
+
+.steal-card__image {
+  width: 391px;
+  height: 244px;
+  background-color: #9c9c9c;
+  border: none;
+  border-radius: 3px;
+  object-fit: cover;
+  display: block;
+}
+
+@media (max-width: 768px) {
+  .steal-card__image {
+    width: 320px;
+    height: 200px;
+  }
+}
+
+@media (max-width: 576px) {
+  .steal-card__image {
+    width: 260px;
+    height: 160px;
+  }
+}

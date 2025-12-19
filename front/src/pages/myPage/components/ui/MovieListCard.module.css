@@ -1,0 +1,37 @@
+.card {
+  width: 120px;
+  cursor: pointer;
+}
+
+.poster {
+  width: 100%;
+  height: 170px;
+  border-radius: 8px;
+  object-fit: cover;
+}
+
+.title {
+  font-weight: bold;
+  margin: 8px 0 6px;
+
+  width: 100%;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.rating {
+  display: flex;
+  align-items: center;
+  gap: 4px;
+  color: #EDD379;
+  font-size: 14px;
+  margin: 4px 0 0;
+}
+
+.rating .starIcon {
+  width: 14px;
+  height: 14px;
+  fill: #EDD379;
+  flex-shrink: 0;
+}

@@ -1,0 +1,136 @@
+.sectionContainer {
+  width: 1312px;
+  margin: 0 auto 0px auto;
+  position: relative;
+}
+
+.titleHeader {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.title {
+  font-size: 20px;
+  font-weight: bold;
+}
+
+.viewAllButton {
+  border: none;
+  background: none;
+  color: #7E7E7E;
+  font-size: 14px;
+  cursor: pointer;
+  margin-top: 20px;
+}
+
+/* 스크롤을 감싸는 회색 박스 */
+.scrollBox {
+  border: 1px solid #EDEDED;
+  border-radius: 12px;
+  background-color: #f8f8f8;
+  padding: 35px 40px 30px 40px;
+  position: relative;
+  overflow: hidden;
+}
+
+.scrollContainer {
+  width: 1230px; 
+  gap: var(--gap);
+  overflow-x: auto;
+  display: flex;
+  scroll-snap-type: x mandatory;
+  scroll-behavior: smooth;
+  scrollbar-width: none;
+  -ms-overflow-style: none;
+}
+
+.scrollContainer::-webkit-scrollbar {
+  display: none;
+}
+
+/* map() 내부의 div 래퍼 */
+.cardWrapper {
+  width: 230px; 
+  flex: 0 0 auto;
+  scroll-snap-align: start;
+}
+
+/* --- 캐러셀 버튼 (공통 스타일) --- */
+.navButton {
+  position: absolute;
+  top: 55%; 
+  transform: translateY(-50%);
+  width: 40px;
+  height: 40px;
+  border-radius: 100px;
+  border: 1px solid rgba(0, 0, 0, 0.12);
+  background: #ffffff;
+  box-shadow: 0 0 4px rgba(0, 0, 0, 0.2);
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 10;
+  user-select: none;
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+  color: #7e7e7e;
+}
+
+.navButton:hover {
+  transform: translateY(-50%) scale(1.05);
+  box-shadow: 0 0 6px rgba(0, 0, 0, 0.25);
+}
+
+.navButtonLeft {
+  left: 23px; 
+}
+
+.navButtonLeft svg {
+  transform: rotate(180deg);
+}
+
+.navButtonRight {
+  right: 23px; 
+}
+
+/* 반응형 코드 추가 */
+@media (max-width: 1350px) {
+  .sectionContainer {
+    width: 100%;
+  }
+  .scrollContainer {
+    width: 100%;
+  }
+  .cardWrapper {
+    width: auto;
+  }
+}
+
+@media (max-width: 768px) {
+  .titleHeader {
+    padding: 0 10px; 
+    align-items: baseline;
+  }
+  .title {
+    font-size: 18px;
+  }
+  .viewAllButton {
+    margin-top: 0;
+    font-size: 13px;
+  }
+  .scrollBox {
+    padding: 20px;
+  }
+  .navButton {
+    width: 36px;
+    height: 36px;
+    display: none;
+  }
+  .navButtonLeft {
+    left: 10px; 
+  }
+  .navButtonRight {
+    right: 10px; 
+  }
+}

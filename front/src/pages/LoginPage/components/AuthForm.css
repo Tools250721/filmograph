@@ -1,0 +1,130 @@
+/* 전체 배경 */
+.auth-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  background-color: #e9e9e9;
+}
+
+/* 흰색 폼 박스 */
+.auth-form {
+  background-color: white;
+  padding: 40px 20px;
+  border-radius: 16px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  width: 100%;
+  max-width: 350px;
+  text-align: center;
+}
+
+/* 로고 스타일 */
+.auth-logo {
+  margin: 0 auto;
+}
+
+/* 제목 (로그인, 회원가입 등) */
+.auth-title {
+  font-size: 20px;
+  font-weight: bold;
+  color: #2e5747;
+  margin-top: 30px;
+}
+
+/* Input 필드들을 감싸는 영역 */
+.auth-inputs {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  margin-bottom: 20px;
+}
+
+.auth-inputs input {
+  width: 100%;
+  padding: 13px 12px;
+  border: none;
+  background-color: #f1f1f1;
+  border-radius: 5px;
+  font-size: 15px;
+  box-sizing: border-box;
+}
+
+.auth-inputs input::placeholder {
+  color: #7e7e7e;
+}
+
+.auth-inputs input:focus {
+  outline: none;
+  border-color: #5d756b;
+  background-color: #f1f1f1;
+}
+
+.auth-button {
+  width: 100%;
+  padding: 11px;
+  border: none;
+  background-color: #678d77;
+  color: white;
+  border-radius: 5px;
+  font-size: 14px;
+  cursor: pointer;
+  transition: background-color 0.2s;
+}
+
+.auth-button:hover {
+  background-color: #678d77;
+}
+
+.auth-links {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 15px;
+  margin-top: 23px;
+  font-size: 13px;
+}
+
+.auth-link-text {
+  color: #7e7e7e;
+  font-size: 14px;
+}
+
+.auth-links a {
+  color: #2e5747;
+  text-decoration: none;
+  margin: 0 5px;
+}
+
+.auth-links a:hover {
+  text-decoration: underline;
+}
+
+@media (max-width: 768px) {
+  .auth-container {
+    padding: 40px 16px;
+  }
+
+  .auth-form {
+    max-width: 100%;
+    padding: 36px 18px;
+  }
+}
+
+@media (max-width: 480px) {
+  .auth-container {
+    padding: 32px 14px;
+  }
+
+  .auth-form {
+    padding: 32px 16px;
+    border-radius: 14px;
+  }
+
+  .auth-title {
+    font-size: 19px;
+  }
+
+  .auth-links {
+    gap: 12px;
+  }
+}

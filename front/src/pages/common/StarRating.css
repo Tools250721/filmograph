@@ -1,0 +1,22 @@
+.star-rating {
+  display: inline-flex;
+  align-items: center;
+  gap: 2px;
+}
+
+.star-rating__button {
+  background: none;
+  border: none;
+  cursor: pointer;
+  padding: 1px;
+  line-height: 0;
+}
+
+.star-rating__button--readonly {
+  cursor: default;
+}
+
+.star-rating--readonly .star-rating__button svg {
+  pointer-events: none;
+}
+

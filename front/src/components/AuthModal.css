@@ -1,0 +1,131 @@
+.auth-modal {
+  padding: 40px 20px;
+}
+
+.auth-modal__form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+
+.auth-modal__logo {
+  margin: 0 auto;
+  display: block;
+}
+
+.auth-modal__title {
+  font-size: 20px;
+  font-weight: bold;
+  color: #2e5747;
+  margin-top: 30px;
+  margin-bottom: 0;
+}
+
+.auth-modal__inputs {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  margin: 20px 0;
+  width: 100%;
+}
+
+.auth-modal__inputs input {
+  width: 100%;
+  padding: 13px 12px;
+  border: none;
+  background-color: #f1f1f1;
+  border-radius: 5px;
+  font-size: 15px;
+  box-sizing: border-box;
+}
+
+.auth-modal__inputs input::placeholder {
+  color: #7e7e7e;
+}
+
+.auth-modal__inputs input:focus {
+  outline: none;
+  border-color: #5d756b;
+  background-color: #f1f1f1;
+}
+
+.auth-modal__error {
+  color: #e74c3c;
+  font-size: 13px;
+  margin-bottom: 8px;
+  text-align: left;
+}
+
+.auth-modal__button {
+  width: 100%;
+  padding: 11px;
+  border: none;
+  background-color: #678d77;
+  color: white;
+  border-radius: 5px;
+  font-size: 14px;
+  cursor: pointer;
+  transition: background-color 0.2s;
+}
+
+.auth-modal__button:hover:not(:disabled) {
+  background-color: #5a7a66;
+}
+
+.auth-modal__button:disabled {
+  opacity: 0.6;
+  cursor: not-allowed;
+}
+
+.auth-modal__links {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 15px;
+  margin-top: 23px;
+  font-size: 13px;
+}
+
+.auth-modal__link-text {
+  color: #7e7e7e;
+  font-size: 14px;
+}
+
+.auth-modal__link {
+  color: #2e5747;
+  text-decoration: none;
+}
+
+.auth-modal__link:hover {
+  text-decoration: underline;
+}
+
+.auth-modal__link-button {
+  background: none;
+  border: none;
+  color: #2e5747;
+  text-decoration: none;
+  cursor: pointer;
+  font-size: 14px;
+  padding: 0;
+  margin: 0;
+}
+
+.auth-modal__link-button:hover {
+  text-decoration: underline;
+}
+
+@media (max-width: 480px) {
+  .auth-modal {
+    padding: 32px 16px;
+  }
+
+  .auth-modal__title {
+    font-size: 19px;
+  }
+
+  .auth-modal__links {
+    gap: 12px;
+  }
+}

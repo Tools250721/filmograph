@@ -1,0 +1,43 @@
+.rating-summary {
+  display: flex;
+  gap: 55px;
+  justify-content: center;
+  text-align: center;
+  align-items: center;
+}
+
+.rating-summary__column {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 9px;
+}
+
+.rating-summary__column--mine {
+  color: #678d77;
+}
+
+.rating-summary__column--average {
+  color: #edd379;
+}
+
+.rating-summary__score {
+  font-size: 36px;
+  font-weight: 700;
+}
+
+.rating-summary__label {
+  font-size: 14px;
+  color: #8c8c8c;
+}
+
+@media (max-width: 768px) {
+  .rating-summary {
+    gap: 32px;
+  }
+
+  .rating-summary__score {
+    font-size: 32px;
+  }
+}
+

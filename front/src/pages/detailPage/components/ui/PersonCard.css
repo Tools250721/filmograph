@@ -1,0 +1,52 @@
+.person-card {
+  position: relative;
+  display: flex;
+  gap: 12px;
+  align-items: center;
+  padding: 10px 0;
+  min-width: 0;
+}
+
+.person-card__avatar {
+  width: 56px;
+  height: 56px;
+  border-radius: 5px;
+  background-color: #9c9c9c;
+  object-fit: cover;
+  flex: 0 0 auto;
+}
+
+.person-card__info {
+  min-width: 0;
+}
+
+.person-card__name {
+  font-size: 16px;
+  font-weight: 400;
+  color: #000;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  overflow: hidden;
+  max-width: 260px;
+}
+
+.person-card__meta {
+  padding-top: 4px;
+  font-size: 14px;
+  color: #7e7e7e;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  overflow: hidden;
+  max-width: 260px;
+}
+
+.person-card--divider::after {
+  content: "";
+  position: absolute;
+  left: 68px;
+  right: 0;
+  bottom: 0;
+  height: 1px;
+  background: #ededed;
+}
+
